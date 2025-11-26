@@ -327,6 +327,45 @@ a:hover {
   color: #e5e7eb;
 }
 
+.archion-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr);
+  gap: 2.5rem;
+}
+
+.archion-text p {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.archion-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.archion-panel {
+  border-radius: 1.25rem;
+  background: rgba(15, 23, 42, 0.87);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 1.3rem 1.2rem;
+}
+
+.archion-panel h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.archion-panel ul {
+  list-style: none;
+}
+
+.archion-panel li {
+  font-size: 0.85rem;
+  color: #d1d5db;
+  margin-bottom: 0.25rem;
+}
+
 .about-content {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr);
@@ -415,6 +454,10 @@ a:hover {
   }
 
   .project-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .archion-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
